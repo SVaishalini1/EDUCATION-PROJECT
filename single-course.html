@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Course Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light pt-5">
+  
+    
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg bg-light border-bottom small blur-filter fixed-top" style="--bs-bg-opacity:0.9">
+        <div class="container">
+            
+            <a href="index.html" class="navbar-brand">
+                <img src="img/Prime-Inspire-Logo.svg" alt="">
+            </a>
+
+            <button
+                class="navbar-toggler border-0" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbar-content" 
+                aria-controls="navbar-content"
+                aria-expanded="false"
+                aria-label="Toggle Navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-content">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active" aria-current="page">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="course.html" class="nav-link">Courses</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="faq.html" class="nav-link">FAQ</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link">Blog</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+
+                    
+                </ul>
+
+                <div class="ms-auto me-1 d-grid d-md-block gap-2 mb-2 mb-md-0">
+                    <a href="#" class="btn btn-sm btn-danger align-items-center d-inline-flex text-center justify-content-center">
+                        Sign-up for free
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-check ms-2" viewBox="0 0 16 16">
+                            <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m1.679-4.493-1.335 2.226a.75.75 0 0 1-1.174.144l-.774-.773a.5.5 0 0 1 .708-.708l.547.548 1.17-1.951a.5.5 0 1 1 .858.514M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4"/>
+                            <path d="M8.256 14a4.5 4.5 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10q.39 0 .74.025c.226-.341.496-.65.804-.918Q8.844 9.002 8 9c-5 0-6 3-6 4s1 1 1 1z"/>
+                          </svg>
+                    </a>
+                    <a href="#" class="btn btn-sm btn-warning align-items-center d-inline-flex text-center justify-content-center">
+                        Login
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right ms-2" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0z"/>
+                            <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
+                          </svg>
+                    </a>
+                </div>
+
+                <form class="d-grid" role="search">
+                    <div class="input-group">
+                        <input type="search" class="form-control form-control-sm " placeholder="Search ...">
+                        <button
+                            type="submit"
+                            class="btn btn-sm btn-success">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                              </svg>
+                        </button>
+                    </div>
+                </form>
+
+               
+            </div>
+            
+        </div>
+    </nav>
+
+    <!-- Navbar -->
+
+   
+    <!-- Single Course Header -->
+
+    <header class="single-course-header py-5 border-bottom">
+        <div class="container">
+            <div class="row gx-md-5 align-items-center">
+                <div class="col-md-6 order-md-0 order-2">
+                    <div class="breadcrumb-holder">
+                        <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider : '&rang;'  ">
+                            <ol class="breadcrumb text-bg-light border d-inline-flex align-items-center px-3 py-1 rounded-pill">
+                                <li class="breadcrumb-item">
+                                    <a href="index.html" class="small text-decoration-none">Home</a>
+                                </li>
+                                <li class="breadcrumb-item">
+                                    <a href="course.html" class="small text-decoration-none">Courses</a>
+                                </li>
+                                <li class="breadcrumb-item active small" aria-current="page">
+                                    Single Courses
+                                </li>
+                            </ol>
+                        </nav>
+                    </div>
+
+                    <div class="single-course-content-holder pe-md-5 mb-3">
+                        <h1 class="fw-normal fs-3">
+                            Lorem ipsum dolor sit, amet consectetur
+                        </h1>
+                        <h2 class="fs-6 small fw-light text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi assumenda quam beatae, voluptatum exercitationem quo ut tempore aspernatur quibusdam dolor, possimus vitae earum! Sed aperiam, voluptas eius eveniet natus enim.</h2>
+                        <hr>
+
+                        <div class="reviews-holder d-inline-flex align-items-center mb-3 small">
+                            <span class="rounded-pill text-bg-warning px-2 py-1 small d-inline-flex align-items-center me-2 justify-content-center text-center border border-warning shadow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-star-fill me-2" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                  </svg>
+                                Rating : 4.7
+                            </span>
+
+                            <span class="rounded-pill text-bg-light px-2 py-1 small d-inline-flex align-items-center justify-content-center text-center border shadow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-badge-fill me-2" viewBox="0 0 16 16">
+                                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zm4.5 0a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1zM8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6m5 2.755C12.146 12.825 10.623 12 8 12s-4.146.826-5 1.755V14a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1z"/>
+                                  </svg>
+                                532 Student's Enrolled
+                            </span>
+                        </div>
+
+                        <div class="course-data mb-2 small">
+                            <p class="mb-1 d-flex align-items-center">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hourglass-split me-2" viewBox="0 0 16 16">
+                                    <path d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z"/>
+                                  </svg>
+                                
+                                4.2 Hours on-demand video
+                            </p>
+                            <p class="mb-1 d-flex align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tv me-2" viewBox="0 0 16 16">
+                                    <path d="M2.5 13.5A.5.5 0 0 1 3 13h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5M13.991 3l.024.001a1.5 1.5 0 0 1 .538.143.76.76 0 0 1 .302.254c.067.1.145.277.145.602v5.991l-.001.024a1.5 1.5 0 0 1-.143.538.76.76 0 0 1-.254.302c-.1.067-.277.145-.602.145H2.009l-.024-.001a1.5 1.5 0 0 1-.538-.143.76.76 0 0 1-.302-.254C1.078 10.502 1 10.325 1 10V4.009l.001-.024a1.5 1.5 0 0 1 .143-.538.76.76 0 0 1 .254-.302C1.498 3.078 1.675 3 2 3zM14 2H2C0 2 0 4 0 4v6c0 2 2 2 2 2h12c2 0 2-2 2-2V4c0-2-2-2-2-2"/>
+                                </svg>
+                                475 Video lectures
+                            </p>
+                            <p class="mb-1 d-flex align-items-center">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-infinity me-2" viewBox="0 0 16 16">
+                                    <path d="M5.68 5.792 7.345 7.75 5.681 9.708a2.75 2.75 0 1 1 0-3.916ZM8 6.978 6.416 5.113l-.014-.015a3.75 3.75 0 1 0 0 5.304l.014-.015L8 8.522l1.584 1.865.014.015a3.75 3.75 0 1 0 0-5.304l-.014.015zm.656.772 1.663-1.958a2.75 2.75 0 1 1 0 3.916z"/>
+                                  </svg>
+                                Unlimited lifetime access
+                            </p>
+
+                            <p class="mb-1 d-flex align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-award me-2" viewBox="0 0 16 16">
+                                    <path d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702z"/>
+                                    <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z"/>
+                                  </svg>
+                                Certificate of completion.
+                            </p>
+                            <p class="mb-1 d-flex align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card-2-back me-2" viewBox="0 0 16 16">
+                                    <path d="M11 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5z"/>
+                                    <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm13 2v5H1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1m-1 9H2a1 1 0 0 1-1-1v-1h14v1a1 1 0 0 1-1 1"/>
+                                  </svg>
+
+                                30-Day Money back Guarantee
+                            </p>
+
+                            <p class="mb-1 d-flex align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-tags me-2" viewBox="0 0 16 16">
+                                    <path d="M3 2v4.586l7 7L14.586 9l-7-7zM2 2a1 1 0 0 1 1-1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 2 6.586z"/>
+                                    <path d="M5.5 5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m0 1a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3M1 7.086a1 1 0 0 0 .293.707L8.75 15.25l-.043.043a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 0 7.586V3a1 1 0 0 1 1-1z"/>
+                                  </svg>
+                                <strong class="me-2 text-success">&#8377; 455/-</strong>
+                                <span class="me-2 text-secondary">
+                                    <del>&#8377; 5,200/-</del>
+                                </span>
+                                <span class="me-2 p-2 text-danger text-bg-light rounded-pill shadow course-hover">
+                                    95% OFF
+                                </span>
+                            </p>
+
+                        </div>
+
+                        <div class="course-buttons my-3">
+                            <div class="d-grid d-md-block gap-2">
+                                <a href="#" class="btn btn-sm btn-success d-inline-flex align-items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right-circle-fill me-2" viewBox="0 0 16 16">
+                                        <path d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8m5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707z"/>
+                                      </svg>
+                                    Enroll Now
+                                </a>
+                                
+                                <a href="#" class="btn btn-sm btn-warning d-inline-flex align-items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-coin me-2" viewBox="0 0 16 16">
+                                        <path d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518z"/>
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                        <path d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11m0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12"/>
+                                    </svg>
+                                    Coupon
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="col-md-6 single-course-image mb-md-0 mb-3">
+                    <img src="img/home-page.webp" alt="" class="rounded img-fluid full-width shadow-lg">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Single Course Header -->
+  
+
+    <!-- Course Description -->
+
+    <section class="single-course-description py-5 border-bottom">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="course-description-image mb-md-0 mb-3">
+                        <img src="img/home-page.webp" alt="" class="rounded img-fluid full-width">
+                        
+                        
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="course-description-content small ps-md-5">
+                        <h3 class="fs-4 course-description">Course Description</h3>
+                            <hr class="w-75">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptates voluptatem debitis perferendis exercitationem iste sit fuga laudantium deleniti natus illum, aperiam modi eos facilis quos voluptate non aliquam. Quidem.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam eum officia quis id doloribus corporis, soluta itaque fuga maxime nesciunt in officiis tempora! Cum, aspernatur sit eius dolorum fugiat error.</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Course Description -->
+
+ 
+    <!-- Course Content -->
+
+    <section class="course-content py-5 border-bottom">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 order-md-2">
+                    <div class="course-content-image mb-md-0 mb-3">
+                        <img src="img/home-page.webp" alt="" class="rounded img-fluid full-width">
+                    </div>
+                    
+                </div>
+                <div class="col-md-6">
+                    <div class="course-content small pe-md-5">
+                        <h3 class="fs-4">What's covered in this course</h3>
+                        <hr class="w-75">
+                        
+                        <div class="mb-2">
+                            <p class="m-0">
+                                <a href="#course-content-1" role="button" aria-expanded="false" aria-controls="course-content-1" data-bs-toggle="collapse"  class="btn  border shadow-sm d-flex justify-content-between align-items-center" style="background-color: #E0E0E0;">
+                                    Course Content 1
+                                    <img src="img/arrow-down.png" alt="" style="width: 14px; height: 14px;">
+                                </a>
+                                    
+                            </p>
+
+                            <div class="collapse show mb-2" id="course-content-1">
+                                <div class="card card-body">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi nisi amet vel magnam, 
+                                        perspiciatis consequuntur dolorem rerum consectetur cupiditate enim adipisci ullam porro aperiam 
+                                        sed inventore, facere eius accusantium est.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-2">
+                            <p class="m-0">
+                                <a href="#course-content-2" role="button" aria-expanded="false" aria-controls="course-content-2" data-bs-toggle="collapse"  class="btn border shadow-sm d-flex justify-content-between align-items-center" style="background-color: #E0E0E0;">
+                                    Course Content 2
+                                    <img src="img/arrow-down.png" alt="" style="width: 14px; height: 14px;">
+                                </a>
+                                    
+                            </p>
+                            <div class="collapse mb-2" id="course-content-2" >
+                                <div class="card card-body">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi nisi amet vel magnam, 
+                                        perspiciatis consequuntur dolorem rerum consectetur cupiditate enim adipisci ullam porro aperiam 
+                                        sed inventore, facere eius accusantium est.
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="mb-2">
+                            <p class="m-0">
+                                <a href="#course-content-3" role="button" aria-expanded="false" aria-controls="course-content-3" data-bs-toggle="collapse"  class="btn  border shadow-sm d-flex justify-content-between align-items-center" style="background-color: #E0E0E0;">
+                                    Course Content 3
+                                    <img src="img/arrow-down.png" alt="" style="width: 14px; height: 14px;">
+                                </a>
+                                    
+                            </p>
+                            <div class="collapse mb-2" id="course-content-3" >
+                                <div class="card card-body">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi nisi amet vel magnam, 
+                                        perspiciatis consequuntur dolorem rerum consectetur cupiditate enim adipisci ullam porro aperiam 
+                                        sed inventore, facere eius accusantium est.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-2">
+                            <p class="m-0">
+                                <a href="#course-content-4" role="button" aria-expanded="false" aria-controls="course-content-4" data-bs-toggle="collapse"  class="btn  border shadow-sm d-flex justify-content-between align-items-center" style="background-color: #E0E0E0;">
+                                    Course Content 4
+                                    <img src="img/arrow-down.png" alt="" style="width: 14px; height: 14px;">
+                                </a>
+                                    
+                            </p>
+                            <div class="collapse mb-2" id="course-content-4" >
+                                <div class="card card-body">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi nisi amet vel magnam, 
+                                        perspiciatis consequuntur dolorem rerum consectetur cupiditate enim adipisci ullam porro aperiam 
+                                        sed inventore, facere eius accusantium est.
+                                </div>
+                            </div>
+                        </div>
+
+
+                        
+                            
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Course Content -->
+ 
+
+
+    <!-- Subscribe -->
+
+    <section class="subscribe py-5">
+        <div class="container" style="height: 350px;">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="subscribe-heading text-white  text-center">
+                        <h5 class="fs-4 fw-light m-0 mb-md-0 mb-3">Subscribe for newletters.</h5>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row justify-content-center mt-3">
+                <div class="col-md-4">
+                    <form class="d-flex justify-content-center">
+                        <div class="input-group">
+                            <input type="text" class="form-control form-control-sm" placeholder="First  Name">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-4">
+                    <form class="d-flex justify-content-center mt-md-0 mt-2">
+                        <div class="input-group">
+                            <input type="text" class="form-control form-control-sm" placeholder="Last  Name">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-8">
+                    <form class="d-flex justify-content-center">
+                        <div class="input-group">
+                            <input type="email" class="form-control form-control-sm mt-2" placeholder="Email">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-8">
+                    <div class="d-grid">
+                        <button 
+                            type="submit"
+                            class="btn btn-sm btn-success  align-items-center d-inline-flex text-center justify-content-center mt-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-envelope-fill mt-1 me-2" viewBox="0 0 16 16" style="margin-bottom : 0.2rem">
+                                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+                            </svg>
+                            Subscribe
+                        </button>
+                    </div>
+                
+
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Subscribe -->
+
+    <!-- Main Footer -->
+
+    <footer class="main-footer text-bg-dark py-5 small">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-3">
+                    <div class="brand-icon mb-2">
+                        <img src="img/Prime-Inspire-Logo-dark.svg"  alt="" class="img-fluid">
+                    </div>
+                    <address class="small text-secondary">
+                        Dummy Address. <br>
+                        Address Line 2. <br>
+                        Pincode 
+                    </address>
+                    <p class="small text-secondary">
+                        contact&commat;myIndia.com
+                    </p>
+                </div>
+                <div class="col-md-2">
+                    <h6>Main Menu</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#" class="text-decoration-none text-secondary">Link Item</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Link Item</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Link Item</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Link Item</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Link Item</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h6>Misc</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#" class="text-decoration-none text-secondary">Link Item</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Link Item</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Link Item</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Link Item</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Link Item</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-5">
+                    <h6>Follow us</h6>
+                    <p>
+                        <a href="#" class="btn btn-sm btn-primary rounded-pill px-md-3 d-inline-flex align-items-center justify-content-center mb-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook me-md-2" viewBox="0 0 16 16">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                            </svg>
+
+                            <span class="d-md-block d-none ">Facebook</span>
+                        </a>
+
+                        <a href="#" class="btn btn-sm btn-success rounded-pill px-md-3 d-inline-flex align-items-center justify-content-center mb-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp me-md-2" viewBox="0 0 16 16">
+                                <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                            </svg>
+
+                            <span class="d-md-block d-none ">Whatsapp</span>
+                        </a>
+
+                        <a href="#" class="btn btn-sm btn-danger rounded-pill px-md-3 d-inline-flex align-items-center justify-content-center mb-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube me-md-2" viewBox="0 0 16 16">
+                                <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                              </svg>
+
+                            <span class="d-md-block d-none ">Youtube</span>
+                        </a>
+
+                        <a href="#" class="btn btn-sm btn-info rounded-pill px-md-3 d-inline-flex align-items-center justify-content-center mb-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter me-md-2" viewBox="0 0 16 16">
+                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                            </svg>
+
+                            <span class="d-md-block d-none ">Twitter</span>
+                        </a>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main Footer -->
+
+    
+
+    
+    <!-- Copyright -->
+
+    <div class="copy py-4 small"  style="background-color: black;">
+        <div class="container">
+            <div class="row justify-content-center text-center text-white">
+                <p class="m-0 small">
+                    Copyright &copy; 2025. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright -->
+
+    <!-- Mobile Padding -->
+
+    <div class="mobile-padding pt-5 pb-4 d-md-none" style="background-color: black;"></div>
+    <!-- Mobile Padding -->
+
+    <!-- Sticky Footer -->
+
+    <div class="d-md-none d-block d-flex p-3 fixed-bottom justify-content-center blur-filter shadow-lg">
+        <a href="#" class="rounded-pill btn btn-sm btn-warning small px-3 fw-bold d-inline-flex align-items-center justify-content-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-check-fill me-2" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M15.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+                <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+              </svg>
+            Sign-up for Free
+        </a>
+    </div>
+    <!-- Sticky Footer -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>    
+</body>
+</html>
